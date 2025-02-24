@@ -5,9 +5,6 @@ function cakes($recipe, $ingredients){
   $bolos = 999;
   foreach ($recipe as $ingrediente => $quantidade) {
     if (isset($ingredients[$ingrediente])) {
-        //return  0;
-        //$bolo = $ingred / $recipe[$inteiro];
-        //$bolos[] = $bolo
       $boloIngrediente = intdiv($ingredients[$ingrediente], $quantidade);
 
       if ($boloIngrediente < $bolos){
