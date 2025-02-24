@@ -1,7 +1,6 @@
 <?php
 function cakes($recipe, $ingredients){
   // Desenvolver o código nesta function,
-  //$bolos = [];
   $bolos = 999;
   foreach ($recipe as $ingrediente => $quantidade) {
     if (isset($ingredients[$ingrediente])) {
@@ -13,10 +12,6 @@ function cakes($recipe, $ingredients){
     }else{
       return 0;
     }
-
-    //if(isset($ingredients[$ingrediente])==0){
-    //  return 0;
-    //}
   }
   return $bolos;
   
